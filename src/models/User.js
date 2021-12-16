@@ -1,7 +1,7 @@
 import sequelize, { STRING } from "sequelize"
 import connection from "../database/connection"
 
-const Person = connection.define('Person', {
+const User = connection.define('User', {
     id: {
         allowNull: false,
         autoIncrement: true,
@@ -31,7 +31,13 @@ const Person = connection.define('Person', {
     }
 })
 
-// class Person{
+User.sync({
+    force:false
+})
+
+export default User
+
+// class User{
 //     constructor(id, name, birthday, address, phone, email, cpf, type){
 //         this.id = id,
 //         this.name = name,
