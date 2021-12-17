@@ -1,8 +1,8 @@
-import { Sequelize } from "sequelize";
+const { Sequelize } = require('sequelize');
 
-const connection = new Sequelize('auau', 'sa', '123456', {
+const connection = new Sequelize('auau', 'tonatto', '123456', {
     host:'localhost',
     dialect:'postgres'
 })
 
-export default connection
+module.exports = connection

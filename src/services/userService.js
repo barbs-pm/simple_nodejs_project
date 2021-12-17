@@ -1,4 +1,4 @@
-import User from '../models/User'
+const User = require('../models/User')
 
 const userService = {
 
@@ -20,4 +20,4 @@ const userService = {
 
 }
 
-export default userService;
+module.exports = userService;

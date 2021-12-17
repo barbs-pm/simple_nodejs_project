@@ -1,5 +1,5 @@
-import User from '../models/User'
-import userService from '../services/userService'
+const User = require( '../models/User')
+const userService = require('../services/userService')
 
 const userController = {
     registerUser(request, response){
@@ -24,3 +24,5 @@ const userController = {
         })
     }
 }
+
+module.exports = userController

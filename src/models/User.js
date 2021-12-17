@@ -1,5 +1,5 @@
-import sequelize, { STRING } from "sequelize"
-import connection from "../database/connection"
+const sequelize = require('sequelize')
+const connection = require('../database/connection')
 
 const User = connection.define('User', {
     id: {
@@ -35,7 +35,7 @@ User.sync({
     force:false
 })
 
-export default User
+module.exports = User
 
 // class User{
 //     constructor(id, name, birthday, address, phone, email, cpf, type){
